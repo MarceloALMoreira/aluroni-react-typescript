@@ -3,17 +3,33 @@
     padding: 0;
 }
 
+.navcolor {
+    background: rgb(0,135,242);
+    background: linear-gradient(15deg, rgba(0,135,242,1) 0%, rgba(3,206,249,1) 75%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 45px;
+}
+
+.navBar li a {
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+    margin: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navBar li a:hover {
+    color: white;    
+    background: rgba(3, 58, 179, 0.11);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 img {
     width: 150px;
     padding: 3px;
     border-radius: 8px;
+    box-shadow: rgba(240, 235, 235, 0.9) 0px 1px 4px;
+    background: white;
     padding: 10px;
-}
-
-
-
-.navcolor {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin-bottom: 45px;
-
 }
