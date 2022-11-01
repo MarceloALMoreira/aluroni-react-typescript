@@ -1,6 +1,7 @@
 import '../Navbar/style.css'
 import logo from '../../assets/img/logo.png'
 export default function Nav() {
+    
     return (
         <>
             <div className="navcolor">
