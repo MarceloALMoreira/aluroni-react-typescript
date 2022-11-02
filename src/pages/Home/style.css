@@ -9,6 +9,18 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background: rgb(0,135,242);
     border-radius: 30px;
-    height: 75vh;
-   
+    height: 75vh;   
+}
+.resumo{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 40vh;
+    border-radius: 35px 0px 35px 0px;
+}
+.title{
+    background: linear-gradient(15deg, rgba(0,135,242,1) 0%, rgba(3,206,249,1) 75%);  
+    line-height: 65px;   
+    height: 73px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
 }

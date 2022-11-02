@@ -10,14 +10,14 @@ export default function Nav() {
                         <a className="navbar-brand" href="#">
                             <img src={logo} alt="" />
                         </a>
-                        <div className="navBar" id="navbarSupportedContent">
+                        <div className="" id="">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
                                 <li className="nav-item"><a className="nav-link" href="/">HOME</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#">CADASTRO</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#">MOVIMENTOS</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#">RELATÓRIOS</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#">EXPORTAÇÃO SIGAS</a></li>
-                                <li className="nav-item"><a className="nav-link" href="#">NOTAS DE ATUALIZAÇÕES</a></li>
+                                <li className="nav-item"><a className="nav-link" href="#">ATUALIZAÇÕES</a></li>
                             </ul>
                         </div>
                     </div>
