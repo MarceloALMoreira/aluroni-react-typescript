@@ -7,6 +7,7 @@ export default function Home() {
 
         <div className="">
             <Nav />
+            { /*https://tanstack.com/table/v8/docs/adapters/react-table */}
 
             <div className="container">
                 <div className="row">
