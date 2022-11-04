@@ -5,6 +5,8 @@ export default function Cardapio() {
     return (
         <nav className={styles.menu}>
             <img src={logo} alt="Logo Comdia Caseira" />
+
+            ALURONI
         </nav>
     )
 }
