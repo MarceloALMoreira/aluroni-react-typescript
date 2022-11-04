@@ -3,10 +3,15 @@ import styles from './Cardapio.module.scss';
 
 export default function Cardapio() {
     return (
-        <nav className={styles.menu}>
-            <img src={logo} alt="Logo Comdia Caseira" />
-
-            ALURONI
-        </nav>
+        <main>
+            <nav className={styles.menu}>
+                <img src={logo} alt="Logo Comdia Caseira" />
+            </nav>
+            <header className={styles.header}>
+                <div className={styles.header__text}>
+                    A Casa do Código e da Massa
+                </div>
+            </header>
+        </main>
     )
 }
