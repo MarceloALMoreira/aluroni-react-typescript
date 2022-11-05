@@ -1,5 +1,5 @@
 {
-  "name": "resolve-patrimonio",
+  "name": "comida_caseira",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,6 +17,7 @@
     "bootstrap": "^5.2.2",
     "formik": "^2.2.9",
     "framer-motion": "^7.6.4",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-icons": "^1.9.1",
@@ -27,7 +28,9 @@
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "@vitejs/plugin-react": "^2.2.0",
+    "sass": "^1.56.0",
     "typescript": "^4.6.4",
+    "typescript-plugin-css-modules": "^3.4.0",
     "vite": "^3.2.0"
   }
 }
