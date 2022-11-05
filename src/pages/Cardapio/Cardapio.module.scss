@@ -43,6 +43,7 @@
         font-size: 3rem;
         min-width: 400px;
         width: 40%;
+
     }
 }
 
@@ -66,4 +67,16 @@
         font-size: 3rem;
         margin-bottom: 30px;
     }
+
+    &__filters {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        width: 100%;
+        border-radius: 8px;
+
+    }
+
 }
