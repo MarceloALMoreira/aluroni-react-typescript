@@ -4,9 +4,11 @@ import ReactDOM from 'react-dom/client'
 import 'normalize.css';
 import './index.css';
 import Cardapio from './pages/Cardapio';
+import Forms from './components/Formulario';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Cardapio />
+    <Forms/>
   </React.StrictMode>
 )
