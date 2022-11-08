@@ -8,7 +8,6 @@ import Forms from './components/Formulario';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Cardapio />
     <Forms/>
   </React.StrictMode>
 )
