@@ -23,6 +23,9 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.39.1",
     "react-icons": "^4.6.0",
+    "recharts": "^2.1.16",
+    "scrollreveal": "^4.0.9",
+    "styled-components": "^5.3.6",
     "yup": "^0.32.11"
   },
   "devDependencies": {

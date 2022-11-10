@@ -1,0 +1,54 @@
+.section {
+    position: fixed;
+    left: 0;
+    background: rgb(63, 169, 255);
+    height: 100vh;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    gap: 2rem;
+
+    &__top {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        grid-gap: 2rem;
+    }
+
+    &__toggle {
+        display: none;
+    }
+
+    &__brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        svg {
+            color: rgb(239, 239, 241);
+            font-size: 2rem;
+        }
+
+        span {
+            font-size: 2rem;
+            color: rgb(253, 253, 253);
+            padding: 10px;
+            border-radius: 12px;
+            background-color: aquamarine;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        &__links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+}

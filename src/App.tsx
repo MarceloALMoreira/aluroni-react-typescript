@@ -1,11 +1,15 @@
-import { useState } from 'react'
 import './App.css'
+import React from 'react'
+import Sidebar from './components/Dashboard/Sidebar';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <div className="App">
+    <div>
+      <Sidebar/>
+      <Dashboard />
     </div>
   )
 }
