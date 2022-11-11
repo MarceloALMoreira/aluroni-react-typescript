@@ -1,15 +1,13 @@
 import './App.css'
 import React from 'react'
-import Sidebar from './components/Dashboard/Sidebar';
-import Dashboard from './components/Dashboard/Dashboard';
+import Cardapio from './pages/Cardapio';
 
 function App() {
 
 
   return (
     <div>
-      <Sidebar/>
-      <Dashboard />
+      <Cardapio />
     </div>
   )
 }
