@@ -15,7 +15,8 @@ import { style } from "@mui/system";
 
 
 export default function Sidebar() {
-    const [currentLink, setCurrentLink] = useState(1)
+    const [currentLink, setCurrentLink] = useState(1);
+
 
     return (
         <>
@@ -31,43 +32,43 @@ export default function Sidebar() {
                     <div className={styles.section__links}>
                         <ul>
                             <li onClick={() => setCurrentLink(1)}
-                                className={currentLink === 1 ? "active" : ""}>
-                                <a href="">
+                                className={currentLink === 1 ?  "active" : ""}>
+                                <a href="#">
                                     <MdSpaceDashboard />
                                     <span>Dashboard</span>
                                 </a>
                             </li>
                             <li onClick={() => setCurrentLink(2)}
                                 className={currentLink === 2 ? "active" : ""}>
-                                <a href="">
+                                <a href="#">
                                     <RiDashboard2Fill />
                                     <span>Riders</span>
                                 </a>
                             </li>
                             <li onClick={() => setCurrentLink(3)}
                                 className={currentLink === 3 ? "active" : ""}>
-                                <a href="">
+                                <a href="#">
                                     <FaAddressCard />
                                     <span>Payment Details</span>
                                 </a>
                             </li>
                             <li onClick={() => setCurrentLink(4)}
                                 className={currentLink === 4 ? "active" : ""}>
-                                <a href="">
+                                <a href="#">
                                     <GiTwirlCenter />
                                     <span>Learning Center</span>
                                 </a>
                             </li>
                             <li onClick={() => setCurrentLink(5)}
                                 className={currentLink === 5 ? "active" : ""}>
-                                <a href="">
+                                <a href="#">
                                     <BsFillChatTextFill />
                                     <span>FAQs</span>
                                 </a>
                             </li>
                             <li onClick={() => setCurrentLink(6)}
                                 className={currentLink === 6 ? "active" : ""}>
-                                <a href="">
+                                <a href="#">
                                     <IoSettings />
                                     <span>Settings</span>
                                 </a>
@@ -76,7 +77,7 @@ export default function Sidebar() {
                     </div>
                 </div>
                 <div className="logout">
-                    <a href="">
+                    <a href="#">
                         <FiLogOut />
                         <span className="logout">Logout</span>
                     </a>
