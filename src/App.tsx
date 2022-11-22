@@ -1,13 +1,14 @@
 import './App.css';
 import React from 'react';
 import Cardapio from './pages/Cardapio';
+import Inicio from './pages/Inicio';
 
 function App() {
 
 
     return (
         <div>
-            <Cardapio />
+            <Inicio />
         </div>
     );
 }
