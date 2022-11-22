@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import styles from './Ordenador.module.scss';
 import opcoes from './opcoes.json';
 import classNames from 'classnames';
@@ -16,13 +16,13 @@ export default function Ordenador({ ordernador, setOrdenador }: Props) {
         <button
             className={classNames({
                 [styles.ordenador]: true,
-                [styles["ordenador--atvio"]]: ordernador !== '',
+                [styles['ordenador--atvio']]: ordernador !== '',
             })}
             onClick={() => setAberto(!aberto)}
             onBlur={() => setAberto(false)}
         >
 
-            <span>{nomeOrdenador || "Ordenadr por"}</span>
+            <span>{nomeOrdenador || 'Ordenadr por'}</span>
             {aberto ?
                 (<MdKeyboardArrowUp size={20} />) :
                 (<MdKeyboardArrowDown size={20} />)
@@ -30,7 +30,7 @@ export default function Ordenador({ ordernador, setOrdenador }: Props) {
 
             <div className={classNames({
                 [styles.ordenador__options]: true,
-                [styles["ordenador__options--ativo"]]: aberto,
+                [styles['ordenador__options--ativo']]: aberto,
             })}>
                 {opcoes.map(opcao => (
                     <div
@@ -44,5 +44,5 @@ export default function Ordenador({ ordernador, setOrdenador }: Props) {
                     </div>
                 ))}</div>
         </button >
-    )
+    );
 }
