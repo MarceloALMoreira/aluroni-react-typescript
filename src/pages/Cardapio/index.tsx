@@ -1,4 +1,3 @@
-import logo from '../../assets/img/logo.svg';
 import Buscador from './Buscador';
 import styles from './Cardapio.module.scss';
 import { useState } from 'react';
@@ -12,9 +11,6 @@ export default function Cardapio() {
     const [ordenador, setOrdenador] = useState('');
     return (
         <main>
-            <nav className={styles.menu}>
-                <img src={logo} alt="Logo Comdia Caseira" />
-            </nav>
             <header className={styles.header}>
                 <div className={styles.header__text}>
                     A Casa do Código e da Massa
@@ -27,7 +23,7 @@ export default function Cardapio() {
                     <Filters filtro={filtro} setFiltro={setFiltro} />
                     <Ordenador ordernador={ordenador} setOrdenador={setOrdenador} />
                 </div>
-                <Itens busca={busca} filtro={filtro} ordenador={ ordenador} />
+                <Itens busca={busca} filtro={filtro} ordenador={ordenador} />
             </section>
         </main>
     );

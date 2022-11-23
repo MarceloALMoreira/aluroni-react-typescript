@@ -1,4 +1,3 @@
-import React from 'react'
 import Cardapio from '../../data/cardapio.json'
 import styles from './inicio.module.scss';
 
@@ -15,7 +14,7 @@ export default function Inicio() {
             </h3>
             <div className={styles.recomendados}>
                 {patroRecomendados.map(item => (
-                    <div key={item.id} className={styles.recomendados}>
+                    <div key={item.id} className={styles.recomendado}>
                         <div className={styles.recomendado__imagem}>
                             <img src={item.photo} alt={item.title} />
                         </div>
