@@ -8,7 +8,7 @@ export default function Menu() {
         label: 'Inicio',
         to: '/'
     }, {
-        label: 'Cardapadio',
+        label: 'Cardapio',
         to: '/cardapio'
     }, {
         label: 'Sobre',

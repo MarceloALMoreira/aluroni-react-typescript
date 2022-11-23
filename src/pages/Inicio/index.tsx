@@ -1,6 +1,6 @@
 import Cardapio from '../../data/cardapio.json'
 import styles from './inicio.module.scss';
-
+import stylesTema from '../../styles/Tema.module.scss';
 export default function Inicio() {
     let patroRecomendados = [...Cardapio];
     patroRecomendados = patroRecomendados.sort(() => 0.5 - Math.random()).
@@ -9,7 +9,7 @@ export default function Inicio() {
     return (
 
         <section>
-            <h3 className={styles.title}>
+            <h3 className={stylesTema.titulo}>
                 Recomendações da cozinha
             </h3>
             <div className={styles.recomendados}>
