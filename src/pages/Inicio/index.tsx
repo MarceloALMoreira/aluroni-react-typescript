@@ -1,3 +1,4 @@
+import NossaCasa from '../../assets/img/nossa_casa.png'
 import Cardapio from '../../data/cardapio.json'
 import styles from './inicio.module.scss';
 import stylesTema from '../../styles/Tema.module.scss';
@@ -20,8 +21,14 @@ export default function Inicio() {
                         </div>
                         <button className={styles.recomendado__botao}>Ver mais</button>
                     </div>
-
                 ))}
+            </div>
+            <h3 className={stylesTema.titulo}>Nossa casa</h3>
+            <div className={styles.nossaCasa}>
+                <img src={NossaCasa} alt="Casa do Restaurante" />
+                <div className={styles.nossaCasa__endereco}>
+                    Rua Santa Gloria, 774 <br /> <br /> Vila Mariana - SP
+                </div>
             </div>
         </section >
     )
