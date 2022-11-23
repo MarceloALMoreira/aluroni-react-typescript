@@ -10,21 +10,15 @@ export default function Cardapio() {
     const [filtro, setFiltro] = useState<number | null>(null);
     const [ordenador, setOrdenador] = useState('');
     return (
-        <main>
-            <header className={styles.header}>
-                <div className={styles.header__text}>
-                    A Casa do Código e da Massa
-                </div>
-            </header>
-            <section className={styles.cardapio}>
-                <h3 className={styles.carpadio__title}>Cardápio</h3>
-                <Buscador busca={busca} setBusca={setBusca} />
-                <div className={styles.cardapio__filters}>
-                    <Filters filtro={filtro} setFiltro={setFiltro} />
-                    <Ordenador ordernador={ordenador} setOrdenador={setOrdenador} />
-                </div>
-                <Itens busca={busca} filtro={filtro} ordenador={ordenador} />
-            </section>
-        </main>
+        <section className={styles.cardapio}>
+            <h3 className={styles.carpadio__title}>Cardápio</h3>
+            <Buscador busca={busca} setBusca={setBusca} />
+            <div className={styles.cardapio__filters}>
+                <Filters filtro={filtro} setFiltro={setFiltro} />
+                <Ordenador ordernador={ordenador} setOrdenador={setOrdenador} />
+            </div>
+            <Itens busca={busca} filtro={filtro} ordenador={ordenador} />
+        </section>
+
     );
 }
