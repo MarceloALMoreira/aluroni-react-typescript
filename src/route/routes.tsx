@@ -4,15 +4,13 @@ import Cardapio from '../pages/Cardapio';
 import Inicio from '../pages/Inicio';
 import PaginaPadrao from '../components/Pagina';
 import Sobre from '../pages/Sobre';
-import Prato from '../pages/Prato';
 import Footer from '../components/Footer';
 import NotFound from '../pages/NotFound';
-
-
+import Prato from '../pages/Prato';
 
 export default function AppRouter() {
     return (
-        <main>
+        <main className='container'>
             <Router>
                 <Menu />
                 <Routes>
@@ -20,10 +18,9 @@ export default function AppRouter() {
                         <Route index element={<Inicio />} />
                         <Route path='cardapio' element={<Cardapio />} />
                         <Route path='sobre' element={<Sobre />} />
-                        <Route path='prato/:id' element={<Prato/>} />
                     </Route>
+                    <Route path='prato/:id' element={<Prato />} />
                     <Route path='*' element={<NotFound />} />
-                   
                 </Routes>
                 <Footer />
             </Router>
