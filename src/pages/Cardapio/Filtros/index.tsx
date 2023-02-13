@@ -1,5 +1,5 @@
 import { style } from '@mui/system';
-import React from 'react';
+import React, { memo } from 'react';
 import filtros from './filtros.json';
 import styles from './Filtros.module.scss';
 import classNames from 'classnames';
@@ -13,7 +13,7 @@ interface Props {
 
 }
 
-export default function Filters({ filtro, setFiltro }: Props) {
+function Filters({ filtro, setFiltro }: Props) {
     function selectFilters(opcao: IOpcao) {
         if (filtro === opcao.id) return setFiltro(null);
         return setFiltro(opcao.id);
@@ -32,3 +32,4 @@ export default function Filters({ filtro, setFiltro }: Props) {
         </div>
     );
 }
+export default memo(Filters)
