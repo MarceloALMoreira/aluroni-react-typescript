@@ -1,14 +1,13 @@
 import Menu from '../components/Menu';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Cardapio from '../pages/Cardapio';
-import Inicio from '../pages/Inicio';
-import PaginaPadrao from '../components/Pagina';
-import Sobre from '../pages/Sobre';
 import Footer from '../components/Footer';
-import NotFound from '../pages/NotFound';
-import Prato from '../pages/Prato';
 import { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+const Inicio = lazy(() => import('../pages/Inicio'))
+const Sobre = lazy(() => import('../pages/Sobre'))
+const Prato = lazy(() => import('../pages/Prato'))
+const NotFound = lazy(() => import('../pages/NotFound'))
+const PaginaPadrao = lazy(() => import('../components/Pagina'))
 const Cardapio = lazy(() => import('../pages/Cardapio'))
 
 export default function AppRouter() {
